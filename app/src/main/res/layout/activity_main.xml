@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="300sp"
+        android:layout_height="80sp"
+        android:text="TimerQuiz"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="50sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/radio_1"
+            android:text="1分"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/radio_2"
+            android:text="3分"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/radio_3"
+            android:text="5分"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:id="@+id/radio_4"
+            android:text="10分"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="120sp"
+        android:layout_height="60sp"
+        android:text="start"
+        android:textSize="20sp"
+        android:layout_marginTop="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/radio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
